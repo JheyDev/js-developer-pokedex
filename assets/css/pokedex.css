@@ -1,3 +1,9 @@
+@font-face { font-family: 'pokemon'; 
+    src: url('/assets/fonts/pokemon/Pokemon\ Solid.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
 .pokemons {
     display: grid;
     grid-template-columns: 1fr;
@@ -6,76 +12,140 @@
     list-style: none;
 }
 
+.pokemons img {
+  width: 100%; /* Para garantir que a imagem ocupe o tamanho correto */
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.7)); /* Simula um contorno ao redor da imagem */
+}
+
+
+
 .normal {
-    background-color: #a6a877;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+    background-color: gray;
+    background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+    background-size: 50px 50px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .grass {
+    
     background-color: #77c850;
+background-image: linear-gradient(transparent 50%, rgba(255, 255, 255, 0.5) 50%);
+background-size: 50px 50px;
+box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
 .fire {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     background-color: #ee7f30;
+background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;
+
 }
 
 .water {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     background-color: #678fee;
+background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;
 }
 
 .electric {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     background-color: #f7cf2e;
+background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;
 }
 
 .ice {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     background-color: #98d5d7;
+background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;
 }
 
 .ground {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     background-color: #dfbf69;
+background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;
 }
 
 .flying {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     background-color: #a98ff0;
+background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;
 }
 
 .poison {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     background-color: #a040a0;
+background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;
 }
 
 .fighting {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     background-color: #bf3029;
+background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;
 }
 
 .psychic {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     background-color: #f65687;
+background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;
 }
 
 .dark {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     background-color: #725847;
+background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;
 }
 
 .rock {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     background-color: #b8a137;
+background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;
 }
 
 .bug {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     background-color: #a8b720;
+background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;
 }
 
 .ghost {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     background-color: #6e5896;
+background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;
 }
 
 .steel {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     background-color: #b9b7cf;
+background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;
 }
 
 .dragon {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     background-color: #6f38f6;
+background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;
 }
 
 .fairy {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     background-color: #f9aec7;
+background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;
 }
 
 .pokemon {
@@ -87,8 +157,7 @@
 }
 
 .pokemon .number {
-    color: #000;
-    opacity: .3;
+    color: #000000be;
     text-align: right;
     font-size: .625rem;
 }
@@ -97,13 +166,17 @@
     text-transform: capitalize;
     color: #fff;
     margin-bottom: .25rem;
-}
+    font-family: 'pokemon';
+    text-shadow: 1px 1px 5px black;
+    letter-spacing: 5px;
+   }
 
 .pokemon .detail {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .pokemon .detail .types {
